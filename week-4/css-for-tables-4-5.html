@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS For Tables</title>
+
+    <style>
+        table {
+            border: solid black;
+            border-collapse: collapse;
+            width: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th, td {
+            border: solid black;
+        }
+
+        .even {
+            background-color: #fafafa;
+        }
+
+        .odd {
+            background-color: black;
+            color: white;
+        }
+
+        .headerrow {
+            background-color: darkblue ;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tom's Favourite Bands</h1>
+
+    <table>
+        <tr class="headerrow">
+            <th>Song</th>
+            <th>Band</th>
+            <th>Star Rating</th>
+
+        </tr>
+        <tr class="even">
+            <td>Faithfully</td>
+            <td>Journey</td>
+            <td>*****</td>
+        </tr>
+
+        <tr class="odd">
+            <td>Goodbye to You</td>
+            <td>Scandal</td>
+            <td>****</td>
+
+        </tr>
+
+        <tr class="even">
+            <td>Let it Be</td>
+            <td>Beatles</td>
+            <td>*****</td>
+        </tr>
+
+        <tr class="odd">
+            <td>Kyrie</td>
+            <td>Mr. Mister</td>
+            <td>****</td>
+        </tr>
+
+        <tr class="even">
+            <td>Disintergration</td>
+            <td rowspan="3">The Cure</td>
+            <td>*****</td>
+        </tr>
+
+        <tr class="odd">
+            <td>Plainsong</td>
+            
+            <td>****</td>
+        </tr>
+
+        <tr class="even">
+            <td>Friday I'm in Love</td>
+            
+            <td>***</td>
+        </tr>
+
+        <tr class="odd">
+            <td colspan="2">The Band</td>
+
+            <td>****</td>
+        </tr>
+
+
+    </table>
+    
+</body>
+</html>
