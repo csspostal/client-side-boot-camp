@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Video Gallery</title>
+
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #gallery {
+            position: relative;
+            height: 23em;
+            width: 31.25em;
+            margin: 3em auto;
+            cursor: pointer;
+            perspective: 1500px;
+            transform-style: preserve-3d;
+        }
+
+        #gallery img{
+
+            border: 5px solid #eeeeee;
+            margin-left: -153px;
+        }
+
+
+        #gallery audio{
+            border: 5px solid #eeeeee;
+            margin-left: -153px;
+        }
+
+        #gallery video{
+            border: 5px solid #eeeeee;
+            margin-left: -153px;
+            width: 50%;
+        }
+
+        #gallery figure{
+            position: absolute;
+            margin: 0px;
+            height: 20.8em;
+            width: 31.35em;
+            opacity: 0;
+        }
+
+        #gallery figure:nth-of-type(1){
+            animation: bild 30s ease-in-out infinite;
+        }
+
+        #gallery figure:nth-of-type(2){
+            animation: bild 30s 6s ease-in-out infinite;
+
+        }
+
+        #gallery figure:nth-of-type(3){
+            animation: bild 30s 12s ease-in-out infinite;
+        }
+
+        #gallery figure:nth-of-type(4){
+            animation: bild 30s 18s ease-in-out infinite;
+        }
+
+        #gallery figure:nth-of-type(5){
+            animation: bild 30s 24s ease-in-out infinite;
+        }
+
+        #gallery figure:nth-of-type(6){
+            animation: bild 30s 30s ease-in-out infinite;
+        }
+
+        #gallery figure:nth-of-type(7){
+            animation: bild 30s 36s ease-in-out infinite;
+        }
+
+        @keyframes bild {
+            6.66%{
+                opacity: 1;
+                z-index: 3;
+                transform: rotateX(0deg) translateZ(170px);
+            }
+
+            20%{
+                opacity: 1;
+                z-index: 4;
+                transform: rotateX(0deg) translateZ(175px);
+            }
+
+            20.66%{
+                opacity: 1;
+                z-index: 2;
+                transform: rotateX(-90deg) translateZ(175px);
+            }
+
+            20.67%, 100%{
+                opacity: 0;
+                z-index: 1;
+                transform: rotateX(90deg) translateZ(175px);
+            }
+
+            0%{
+                opacity: 1;
+                z-index: 1;
+                transform: rotateX(90deg) translateZ(165px);
+            }
+
+            
+
+            
+
+
+        }
+
+    </style>
+
+</head>
+<body>
+        <br>
+        <br>
+        <br>
+
+        <div id="gallery">
+            <figure>
+                <img src="/client-side-boot-camp/week-5/code-exercises/images/house1.jpg" alt="front porch with chairs" width="800px" height="500px" >
+            </figure>
+
+            <figure>
+                <img src="/client-side-boot-camp/week-5/code-exercises/images/house2.jpg" alt="living room with couch love seat chair and kitchen in the background" width="800px" height="500px" >
+            </figure>
+
+            <figure>
+                <img src="/client-side-boot-camp/week-5/code-exercises/images/house3.jpg" alt="light shinning through two windows with couch against wall and below paint two lamps and vases" width="800px" height="500px" >
+            </figure>
+
+            <figure>
+                <img src="/client-side-boot-camp/week-5/code-exercises/images/house4.jpg" alt="exterior shot of wooden cottage at night with lights glowing inside and out" width="800px" height="500px" >
+            </figure>
+
+            <figure>
+                <img src="/client-side-boot-camp/week-5/code-exercises/images/house5.jpg" alt="front porch with chairs" width="800px" height="500px" >
+            </figure>
+
+            <figure>
+                <audio controls="controls">
+                    <source src="/client-side-boot-camp/week-5/code-exercises/Ian_Kelosky_Agua_Bonita_background_vocals_2_01.mp3" />
+                </audio>
+            
+                <p>Music Licensed through Soundstripe. You can licesne music for your projects too by following this affilate link and recieve 10% off <a href="https://app.soundstripe.com/pricing?fpr=csspostal">https://app.soundstripe.com/pricing?fpr=csspostal</a> your subscription. Sound effects and video as well.</p>
+            </figure>
+
+            <figure>
+                <video controls="controls">
+
+                    <source src="/client-side-boot-camp/week-5/code-exercises/pexels-taryn-elliott-5433994.mp4" />
+            
+                </video>
+            
+                <p>Video by Taryn Elliott from Pexels <a href="https://www.pexels.com/photo/blue-slow-motion-whimsical-wanderlust-5433994/ ">Video Link</a> Thank for sharing this awesome video for free!</p>
+            </figure>
+
+            <div class="pause"></div>
+
+        </div>
+</body>
+</html>
