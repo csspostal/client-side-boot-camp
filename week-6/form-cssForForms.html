@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS for Forms</title>
+
+    <style>
+        label {
+            font-size: 1.25em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            font-size: 1.25em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: tomato;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="#" method="POST">
+
+        <legend>Check the airline schedule</legend>
+
+        <fieldset>
+            <p>Personal Information</p>
+            <label for="fName">First Name</label>
+            <input id="fName" type="text" /><br>
+            <label for="lName">Last Name</label>
+            <input id="lName" type="text" /><br>
+            <label for="email">Email</label>
+            <input id="email" type="email">
+        </fieldset>
+
+        <fieldset>
+            <p>Travel Information</p>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Pizza Placer Order Form</title>
+
+    <style>
+        body {
+            background-color:cornsilk;
+        }
+
+        h2 {
+            text-align: center;
+            color: teal;
+        }
+
+       
+
+        legend {
+            text-align: center;
+            font-size: 1.15em;
+            color: yellowgreen;
+        }
+
+        form {
+            width: 80%;
+            margin: auto;
+            
+        }
+
+          label {
+            font-size: 1.25em;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        }
+
+        input {
+            font-size: 1.25em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: tomato;
+            margin: 5px;
+        }
+
+        form p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.25em;
+            font-weight: bold;
+            color: tomato;
+        }
+
+        select {
+            font-size: 1.5em;
+            background-color: green;
+            color:white;
+
+        }
+
+        button {
+            margin-top: 10px;
+            width: 100%;
+            background-color: green;
+            font-size: 2em;
+            font-weight: bold;
+            border-radius: 10px;
+            color: ivory;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <form action="#" method="POST">
+
+        <legend><h1>Every Pizza Place Order Form</h1></legend>
+
+        
+        <fieldset>
+            <p>Contact Information</p>
+            <label for="fName">First Name</label>
+            <input id="fName" type="text" required="required"/><br/>
+            <label for="lName">Last Name</label>
+            <input id="lName" type="text"  required="required"/><br/>
+            <label for="email">Email</label>
+            <input id="email" type="email" required="required"><br/>
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" required="required" />
+        </fieldset>
+
+        <fieldset>
+            <h2>Types of Pizza</h2>
+
+
+
+            <fieldset>
+
+                <h3>Diet (Delight) Pizzas</h3>
+
+                <label for="dietPizza">Type of Diet Pizza</label>
+                <select id="dietPizza" name="dietPizza">
+                    <option value="default">select your type of pizza</option>
+                    <option value="plainCheese">Plain Cheese</option>
+                    <option value="glutenFree">Gluten Free</option>
+                </select>
+
+                
+            </fieldset>
+
+            <fieldset>
+                <h3>Gourmet Pizzas</h3>
+
+                <label for="gourmetPizza">Choose Your Gourmet Pizzas</label>
+                <select id="gourmetPizza" name="gourmetPizza">
+                    <option value="default">select your gourmet pizza</option>
+                    <option value="hawaiian">Hawaiian</option>
+                    <option value="spinachLovers">Spinach Lovers</option>
+                    <option value="taco">Taco Pizza</option>
+                    <option value="mexican">Mexican Pizza</option>
+                    <option value="fetaEuropean">Feta Pizza European</option>
+                    <option value="blanco">Pizza Blanco</option>
+                    <option value="shrimpScampi">Shrimp Scampi Pizza</option>
+                    <option value="vegetarian">Vegetarian Pizza</option>
+                    <option value="meatLovers">Meat Lovers Pizza</option>
+                    <option value="sausageAlfredo">Sausage Alfredo</option>
+                    <option value="texasBBQ">Texas BBQ Steak</option>
+                    <option value="greek">Greek Pizza</option>
+                    <option value="buffaloMarika">Buffalo Marika Pizza</option>
+
+                </select> 
+
+                <p>Size of Pizza</p>
+                <label for="small">Small</label>
+                <input type="radio" id="small" name="gPizzaSize" value="small" />
+                <label for="large">Large</label>
+                <input type="radio" id="large" name="gPizzaSize" value="large" />
+
+            </fieldset>
+
+            <fieldset>
+                <h3>Gourmet Chicken Pizzas</h3>
+
+                <label for="gourmetChickenPizza">Choose Your Gourmet Chicken Pizzas</label>
+                <select id="gourmetChickenPizza" name="gourmetChickenPizza">
+                    <option value="buffaloChicken">Buffalo Pizza</option>
+                    <option value="chickenRanch">Chicken Ranch Pizza</option>
+                    <option value="biancoChicken">Pizza Bianco with Chicken</option>
+                    <option value="bbqChicken">BBQ Chicken</option>
+                    <option value="ogBBQchicken">Original BBQ Chicken</option>
+                    <option value="louis">Louis Pizza</option>
+                    <option value="chickenAlfredo">Chicken Alfredo</option>
+                    <option value="chickenCordonBlue">Chiciken Cordon Blue</option>
+                    <option value="chickenPesto">Chicken Pesto</option>
+                    <option value="chickenFajita">Chicken Fajita</option>
+                    <option value="chipotleRanch">Chipotle Ranch</option>
+                    <option value="chickenTeriyaki">Chicken Teriyaki</option>
+                    <option value="bostonCranberryAndDeezWalnuts">Boston Cranberry & Walnut</option>
+                </select>
+
+                <p>Size of Pizza</p>
+                <label for="smallCG">Small</label>
+                <input type="radio" id="smallCG" name="cgPizzaSize" value="smallCG" />
+                <label for="largeCG">Large</label>
+                <input type="radio" id="largeCG" name="cgPizzaSize" value="largeCG" />
+                
+            </fieldset>
+
+            <fieldset>
+                <h3>Custom Pizzas</h3>
+
+                <label for="basePizza">Choose Your Base Pizza to Customize</label>
+                <select id="basePizza" name="basePizza">
+                    <option value="plainCheese">Plain Cheese</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="steak">Steak</option>
+                    <option value="houseSpecial">House Special</option>
+                </select>
+                <p>Four Sauces to Choose From</p>
+                <label for="tomatoPizzaSauce">Tomato Pizza Sauce</label>
+                <input type="radio" id="tomatoPizzaSauce" name="choiceOfSauce" value="tomatoPizzaSauce" />
+                <label for="garlicButterSauce">Garlic Butter Sauce</label>
+                <input type="radio" id="garlicButterSauce" name="choiceOfSauce" value="garlicButterSauce" />
+                <label for="alfredoSauce">Alfredo Sauce</label>
+                <input type="radio" id="alfredoSauce" name="choiceOfSauce" value="alfredoSauce" />
+                <label for="pestoSauce">Pesto Sauce</label>
+                <input type="radio" id="pestoSauce" name="choiceOfSauce" value="pestoSauce" />
+
+                <p>Choice of Toppings</p>
+
+                <input type="checkbox" id="peppers" name="toppings" value="peppers" />
+                <label for="peppers">Peppers</label>
+
+                <input type="checkbox" id="greenOlive" name="toppings" value="greenOlive" />
+                <label for="greenOlive">Green Olive</label>
+
+                <input type="checkbox" id="blackOlive" name="toppings" value="blackOlive" />
+                <label for="blackOlive">Black Olive</label>
+
+                <input type="checkbox" id="mushroom" name="toppings" value="mushroom" />
+                <label for="mushroom">Mushroom</label>
+
+                <input type="checkbox" id="eggplant" name="toppings" value="eggplant" />
+                <label for="eggplant">Eggplant</label>
+
+                <input type="checkbox" id="salami" name="toppings" value="salami" />
+                <label for="salami">Salami</label>
+
+                <input type="checkbox" id="fetaCheese" name="toppings" value="fetaCheese" />
+                <label for="fetaCheese">Feta Cheese</label>
+
+                <input type="checkbox" id="broccoli" name="toppings" value="broccoli" />
+                <label for="broccoli">Broccoli</label>
+
+                <input type="checkbox" id="anchovies" name="toppings" value="anchovies" />
+                <label for="anchovies">Anchovies</label>
+
+                <input type="checkbox" id="genoaSalami" name="toppings" value="genoaSalami" />
+                <label for="genoaSalami">Genoa Salami</label>
+
+                <input type="checkbox" id="freshGarlic" name="toppings" value="freshGarlic" />
+                <label for="freshGarlic">Fresh Garlic</label>
+
+                <input type="checkbox" id="pineapple" name="toppings" value="pineapple" />
+                <label for="pineapple">Pineapple</label>
+
+                <input type="checkbox" id="slicedTomato" name="toppings" value="slicedTomato" />
+                <label for="slicedTomato">Sliced Tomato</label>
+
+                <input type="checkbox" id="sunDriedTomato" name="toppings" value="sunDriedTomato" />
+                <label for="sunDriedTomato">Sun Dried Tomato</label>
+
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni" />
+                <label for="pepperoni">Pepperoni</label>
+
+                <input type="checkbox" id="sausage" name="toppings" value="sausage" />
+                <label for="sausage">Sausage</label>
+
+                <input type="checkbox" id="hamburger" name="toppings" value="hamburger" />
+                <label for="hamburger"></label>
+
+                <input type="checkbox" id="artichokes" name="toppings" value="artichokes" />
+                <label for="artichokes">Artichokes</label>
+
+                <input type="checkbox" id="linguica" name="toppings" value="linguica" />
+                <label for="linguica">Linguica</label>
+
+                <input type="checkbox" id="roastedPeppers" name="toppings" value="roastedPeppers" />
+                <label for="roastedPeppers">Roasted Peppers</label>
+
+                <input type="checkbox" id="importedHam" name="toppings" value="importedHam" />
+                <label for="importedHam">Imported Ham</label>
+
+                <input type="checkbox" id="bacon" name="toppings" value="bacon" />
+                <label for="bacon">Bacon</label>
+
+                <input type="checkbox" id="meatball" name="toppings" value="meatball" />
+                <label for="meatball">Meatball</label>
+
+                <input type="checkbox" id="onion" name="toppings" value="onion" />
+                <label for="onion">Onion</label>
+
+                <input type="checkbox" id="redOnion" name="toppings" value="redOnion" />
+                <label for="redOnion">Red Onion</label>
+
+                <input type="checkbox" id="bananaPeppers" name="toppings" value="bananaPeppers" />
+                <label for="bananaPeppers">Banana Peppers</label>
+
+                <input type="checkbox" id="jalapenoPeppers" name="toppings" value="jalapenoPeppers" />
+                <label for="jalapenoPeppers">Jalape&#241;o Peppers</label>
+
+               
+
+            </fieldset>
+
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            
+
+        </fieldset>
+        
+
+    </form>
+    
+</body>
+</html>
